@@ -3,13 +3,13 @@ package game;
 import java.util.Random;
 
 public class Dice {
-	private int dieOne,dieTwo;
+	private int die;
 	private Random rnd = new Random();
 	
 	public int roll() {
-		dieOne = rnd.nextInt(6)+1;
-		dieTwo = rnd.nextInt(6)+1;
-		return dieOne+dieTwo;
+		die = rnd.nextInt(6)+1;
+		return die;
 	}
+	
 	
 }
