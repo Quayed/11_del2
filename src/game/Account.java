@@ -2,9 +2,11 @@ package game;
 
 public class Account {
 	private int balance;
+	final private int id;
 	
-	public Account(int balance) {
+	public Account(int balance, int id) {
 		this.balance = balance;
+		this.id = id;
 	}
 	
 	public void setBalance(int balance){
@@ -31,5 +33,9 @@ public class Account {
 		} else{
 			this.balance = 0;
 		}
+	}
+	
+	public void transfer(Player player, int value){
+		
 	}
 }
