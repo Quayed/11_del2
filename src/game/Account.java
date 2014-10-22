@@ -7,6 +7,14 @@ public class Account {
 		this.balance = balance;
 	}
 	
+	public void setBalance(int balance){
+		this.balance = balance;
+	}
+	
+	public int getBalance(){
+		return this.balance;
+	}
+	
 	public void deposit(int value){
 		if(value > 0){
 			this.balance = this.balance + value;
