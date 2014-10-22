@@ -17,10 +17,18 @@ public class Account {
 	
 	public void deposit(int value){
 		if(value > 0){
-			this.balance = this.balance + value;
+			this.balance += value;
 		} else if (this.balance-value > 0){
-			this.balance = this.balance + value;
-		} else if (this.balance-value < 0){
+			this.balance += value;
+		} else if (this.balance-value <= 0){
+			this.balance = 0;
+		}
+	}
+	
+	public void withdraw(int value){
+		if(this.balance-value > 0){
+			this.balance -= Math.abs(value);
+		} else{
 			this.balance = 0;
 		}
 	}
