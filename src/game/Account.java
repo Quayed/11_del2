@@ -35,7 +35,8 @@ public class Account {
 		}
 	}
 	
-	public void transfer(Player player, int value){
-		
+	public void transfer(Account acc2, int value){
+		this.withdraw(value);
+		acc2.deposit(value);
 	}
 }
