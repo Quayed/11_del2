@@ -11,7 +11,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Crater;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::You fall into a crater and loose 200 gold!;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -19,7 +19,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Palace Gates;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::You pay 200 gold to pass through the Palace Gates;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -27,7 +27,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Cold Desert;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::You pay a faerie 20 gold to warm yu in the Cold Desert;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -35,7 +35,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Walled City;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::You slay a dragon and the Walled City pays you 180 gold;;
 	leje:: ;;
 ||
 	type::Street;;
