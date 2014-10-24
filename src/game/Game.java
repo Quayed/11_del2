@@ -3,12 +3,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 
 import boundaryToMatador.GUI;
-<<<<<<< HEAD
-=======
-//import boundaryToMatador.GUI;
 
-//Swag
->>>>>>> origin/master
 public class Game {
 
 	public static void main(String[] args) {

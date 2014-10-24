@@ -11,7 +11,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Crater;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::Du falder i et krater og taber 200 guld!;;
 	leje:: ;;
 ||
 	type::Street;;
