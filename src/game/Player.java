@@ -3,6 +3,7 @@ package game;
 public class Player {
 	private String name;
 	final private int id;
+	private int field;
 	
 	public Player(String name, int id) {
 		this.name = name;
@@ -19,5 +20,13 @@ public class Player {
 	
 	public String getName(){
 		return this.name;
+	}
+	
+	public void setField(int field) {
+		this.field = field;
+	}
+	
+	public int getField() {
+		return this.field;
 	}
 }
