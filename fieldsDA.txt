@@ -1,0 +1,87 @@
+	type::Chance;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Tower;; 
+	subText:: ;; 
+	description::You reach the Tower and find 250 gold!;;
+	leje:: ;;
+||	
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Crater;; 
+	subText:: ;; 
+	description::DESCRIPTION HERE;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Palace Gates;; 
+	subText:: ;; 
+	description::DESCRIPTION HERE;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Cold Desert;; 
+	subText:: ;; 
+	description::DESCRIPTION HERE;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Walled City;; 
+	subText:: ;; 
+	description::DESCRIPTION HERE;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Monastery;; 
+	subText:: ;; 
+	description::You enter the Monastery. Time to bring out your inner monk!;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Black Cave;; 
+	subText:: ;; 
+	description::You enter the Black Cave but get terrified of the bats inside. You lose 70 in the scuffle!;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Huts in the Mountains;; 
+	subText:: ;; 
+	description::You find some huts in the Mountains where you sleep for the night but during the night you lose 60 somehow!;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::The Werewall;; 
+	subText:: ;; 
+	description::You try to climb the Werewall but fall and lose 80!;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::The Pit;; 
+	subText:: ;; 
+	description::You fall into the Pit and lose 90!;;
+	leje:: ;;
+||
+	type::Street;;
+	backgroundColor::75,,155,,225;;
+	foregroundColor::0,,0,,0;;
+	title::Goldmine;; 
+	subText:: ;; 
+	description::You have found some gold in the mountains that you sell for 650, you are rich!;;
+	leje:: ;;
