@@ -34,7 +34,9 @@ public class Game {
 					GUI.setCar(player1.getField(), player1.getName());
 					acc1.deposit(Integer.parseInt(fieldCost[player1.getField()-1]));
 					GUI.setBalance(player1.getName(), acc1.getBalance());
-					turn = 2;
+					if (player1.getField() != 9) {
+						turn = 2;
+					}
 				}
 				else if (turn == player2.getId()) {
 					if (acc2.getBalance() >= 3000) {
@@ -45,7 +47,9 @@ public class Game {
 					GUI.setCar(player2.getField(), player2.getName());
 					acc2.deposit(Integer.parseInt(fieldCost[player2.getField()-1]));
 					GUI.setBalance(player2.getName(), acc2.getBalance());
-					turn = 1;
+					if (player2.getField() != 9) {
+						turn = 1;
+					}
 				}
 			}
 		}
