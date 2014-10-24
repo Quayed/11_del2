@@ -20,9 +20,9 @@ public class Account {
 	public void deposit(int value){
 		if(value > 0){
 			this.balance += value;
-		} else if (this.balance-value > 0){
+		} else if (this.balance-Math.abs(value) > 0){
 			this.balance += value;
-		} else if (this.balance-value <= 0){
+		} else if (this.balance-Math.abs(value) <= 0){
 			this.balance = 0;
 		}
 	}
