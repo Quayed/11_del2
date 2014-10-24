@@ -51,7 +51,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Black Cave;; 
 	subText:: ;; 
-	description::You enter the Black Cave but get terrified of the bats inside. You lose 70 in the scuffle!;;
+	description::You enter the Black Cave but get terrified of the bats inside. You lose 70 gold in the scuffle!;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -59,7 +59,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Huts in the Mountains;; 
 	subText:: ;; 
-	description::You find some huts in the Mountains where you sleep for the night but during the night you lose 60 somehow!;;
+	description::You find some huts in the Mountains where you sleep for the night but during the night you lose 60 gold somehow!;;
 	leje:: ;;
 ||
 	type::Street;;
