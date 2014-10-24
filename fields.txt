@@ -11,7 +11,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Crater;; 
 	subText:: ;; 
-	description::You fall into an ancient crater and lose 200 gold!;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -19,7 +19,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Palace Gates;; 
 	subText:: ;; 
-	description::You have to pay in order to pass the Palace gates. You lose 100 gold!;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -27,7 +27,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Cold Desert;; 
 	subText:: ;; 
-	description::You pay a faerie 20 gold to keep you warm in the Cold Desert;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -35,7 +35,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Walled City;; 
 	subText:: ;; 
-	description::You become a hero after slaying a dragon and the walled city ;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
