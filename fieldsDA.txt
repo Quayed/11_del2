@@ -3,7 +3,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Tower;; 
 	subText:: ;; 
-	description::You reach the Tower and find 250 gold!;;
+	description::Du plyndre et tårn og finder 250 guld!;;
 	leje:: ;;
 ||	
 	type::Street;;
