@@ -3,7 +3,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Tower;; 
 	subText:: ;; 
-	description::Du plyndre et tårn og finder 250 guld!;;
+	description::Du plyndre det nærliggende tårn og finder 250 guld!;;
 	leje:: ;;
 ||	
 	type::Street;;
@@ -43,7 +43,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Monastery;; 
 	subText:: ;; 
-	description::You enter the Monastery. Time to bring out your inner monk!;;
+	description:: Du træder ind i klosteret og vælger at konvertere til munk!!;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -51,7 +51,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Black Cave;; 
 	subText:: ;; 
-	description::You enter the Black Cave but get terrified of the bats inside. You lose 70 in the scuffle!;;
+	description::Du træder ind i en mørk hule, men bliver rædselslagen af flagermusene. I din panik mister du 70 guld!;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -59,7 +59,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Huts in the Mountains;; 
 	subText:: ;; 
-	description::You find some huts in the Mountains where you sleep for the night but during the night you lose 60 somehow!;;
+	description:: Du finder nogle hytter i bjergene hvor du overnatter. Imens du sover mister du 60 guld!;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -67,7 +67,7 @@
 	foregroundColor::0,,0,,0;;
 	title::The Werewall;; 
 	subText:: ;; 
-	description::You try to climb the Werewall but fall and lose 80!;;
+	description:: Muren er bevogtet af varulve. Du falder ned fra toppen og mister 80 guld!;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -75,7 +75,7 @@
 	foregroundColor::0,,0,,0;;
 	title::The Pit;; 
 	subText:: ;; 
-	description::You fall into the Pit and lose 90!;;
+	description:: Du falder i en farlig grav og mister 90 guld;;
 	leje:: ;;
 ||
 	type::Street;;
