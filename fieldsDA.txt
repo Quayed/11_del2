@@ -1,9 +1,9 @@
-	type::Street;;
+	type::Chance;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
 	title::Tower;; 
 	subText:: ;; 
-	description::You reach the Tower and find 250 gold!;;
+	description::Du plyndre et tårn og finder 250 guld!;;
 	leje:: ;;
 ||	
 	type::Street;;
@@ -11,7 +11,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Crater;; 
 	subText:: ;; 
-	description::You fall into a crater and loose 200 gold!;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -19,7 +19,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Palace Gates;; 
 	subText:: ;; 
-	description::You pay 200 gold to pass through the Palace Gates;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -27,7 +27,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Cold Desert;; 
 	subText:: ;; 
-	description::You pay a faerie 20 gold to warm yu in the Cold Desert;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
@@ -35,7 +35,7 @@
 	foregroundColor::0,,0,,0;;
 	title::Walled City;; 
 	subText:: ;; 
-	description::You slay a dragon and the Walled City pays you 180 gold;;
+	description::DESCRIPTION HERE;;
 	leje:: ;;
 ||
 	type::Street;;
