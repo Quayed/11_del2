@@ -1,5 +1,6 @@
 package game;
 import boundaryToMatador.GUI;
+//import boundaryToMatador.GUI;
 public class Game {
 
 	public static void main(String[] args) {
@@ -8,7 +9,6 @@ public class Game {
 		Dice dice1 = new Dice();
 		Dice dice2 = new Dice();
 		final String[] fieldCost = {"250","-200","-100","-20","180","0","-70","-60","-80","-90","650"};
-		
 		for (int i=0; i<fieldCost.length; i++) {
 			System.out.println(i);
 			GUI.setSubText(i+1, fieldCost[i]);
