@@ -23,10 +23,12 @@ public class Game {
 		
 		GUI.addPlayer(player1.getName(), acc1.getBalance());
 		GUI.addPlayer(player2.getName(), acc2.getBalance());
-		
 		while (true) {
 			if (GUI.getUserButtonPressed("", "Slå!")!="") {
 				if (turn == player1.getId()) {
+					if (acc1.getBalance() >= 3000) {
+						break;
+					}
 					GUI.removeAllCars(player1.getName());
 					player1.setField(dice1.roll()+dice2.roll()-1);
 					GUI.setCar(player1.getField(), player1.getName());
@@ -35,6 +37,9 @@ public class Game {
 					turn = 2;
 				}
 				else if (turn == player2.getId()) {
+					if (acc2.getBalance() >= 3000) {
+						break;
+					}
 					GUI.removeAllCars(player2.getName());
 					player2.setField(dice1.roll()+dice2.roll()-1);
 					GUI.setCar(player2.getField(), player2.getName());
@@ -43,8 +48,9 @@ public class Game {
 					turn = 1;
 				}
 			}
-			
 		}
+		GUI.showMessage("Spiller "+turn+" har vundet!");
+		
 	}
 
 }
