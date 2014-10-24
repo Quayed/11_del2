@@ -38,7 +38,7 @@ public class Game {
 					GUI.removeAllCars(player2.getName());
 					player2.setField(dice1.roll()+dice2.roll()-1);
 					GUI.setCar(player2.getField(), player2.getName());
-					acc2.deposit(Integer.parseInt(fieldCost[player1.getField()-1]));
+					acc2.deposit(Integer.parseInt(fieldCost[player2.getField()-1]));
 					GUI.setBalance(player2.getName(), acc2.getBalance());
 					turn = 1;
 				}
