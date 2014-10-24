@@ -1,6 +1,8 @@
 package game;
+import java.awt.AWTException;
+import java.awt.Robot;
+
 import boundaryToMatador.GUI;
-//import boundaryToMatador.GUI;
 public class Game {
 
 	public static void main(String[] args) {
@@ -26,27 +28,27 @@ public class Game {
 		while (true) {
 			if (GUI.getUserButtonPressed("", "Slå!")!="") {
 				if (turn == player1.getId()) {
-					if (acc1.getBalance() >= 3000) {
-						break;
-					}
 					GUI.removeAllCars(player1.getName());
 					player1.setField(dice1.roll()+dice2.roll()-1);
 					GUI.setCar(player1.getField(), player1.getName());
 					acc1.deposit(Integer.parseInt(fieldCost[player1.getField()-1]));
 					GUI.setBalance(player1.getName(), acc1.getBalance());
+					if (acc1.getBalance() >= 3000) {
+						break;
+					}
 					if (player1.getField() != 9) {
 						turn = 2;
 					}
 				}
 				else if (turn == player2.getId()) {
-					if (acc2.getBalance() >= 3000) {
-						break;
-					}
 					GUI.removeAllCars(player2.getName());
 					player2.setField(dice1.roll()+dice2.roll()-1);
 					GUI.setCar(player2.getField(), player2.getName());
 					acc2.deposit(Integer.parseInt(fieldCost[player2.getField()-1]));
 					GUI.setBalance(player2.getName(), acc2.getBalance());
+					if (acc2.getBalance() >= 3000) {
+						break;
+					}
 					if (player2.getField() != 9) {
 						turn = 1;
 					}
