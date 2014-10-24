@@ -1,4 +1,4 @@
-	type::Chance;;
+	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
 	title::Tower;; 
