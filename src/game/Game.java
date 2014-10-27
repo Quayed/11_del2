@@ -1,6 +1,8 @@
 package game;
 import java.awt.AWTException;
+import java.awt.Color;
 import java.awt.Robot;
+
 //hello
 import boundaryToMatador.GUI;
 
@@ -18,19 +20,20 @@ public class Game {
 		}
 		GUI.showMessage("Game has begun");
 		
-		Player player1 = new Player("Mogens", 1);
+		Player player1 = new Player(GUI.getUserString("Indtast spiller 1's navn:"), 1);
 		Account acc1 = new Account(1000, 1);
+		GUI.addPlayer(player1.getName(), acc1.getBalance(), Color.BLUE);
 		
-		Player player2 = new Player("Jens", 2);
+		Player player2 = new Player(GUI.getUserString("Indtast spiller 2's navn:"), 2);
 		Account acc2 = new Account(1000, 1);
+		GUI.addPlayer(player2.getName(), acc2.getBalance(), Color.RED);
 		
-		GUI.addPlayer(player1.getName(), acc1.getBalance());
-		GUI.addPlayer(player2.getName(), acc2.getBalance());
 		while (true) {
-			if (GUI.getUserButtonPressed("", "Slå!")!="") {
+			if (GUI.getUserButtonPressed("Spiller "+turn+"'s tur.", "Slå!")!="") {
 				if (turn == player1.getId()) {
 					GUI.removeAllCars(player1.getName());
-					player1.setField(dice1.roll()+dice2.roll()-1);
+					GUI.setDice(dice1.roll(), 0, 4, 3, dice2.roll(), 0, 5, 3);
+					player1.setField(dice1.getDie()+dice2.getDie()-1); 
 					GUI.setCar(player1.getField(), player1.getName());
 					acc1.deposit(Integer.parseInt(fieldCost[player1.getField()-1]));
 					GUI.setBalance(player1.getName(), acc1.getBalance());
@@ -43,7 +46,8 @@ public class Game {
 				}
 				else if (turn == player2.getId()) {
 					GUI.removeAllCars(player2.getName());
-					player2.setField(dice1.roll()+dice2.roll()-1);
+					GUI.setDice(dice1.roll(), 0, 4, 3, dice2.roll(), 0, 5, 3);
+					player2.setField(dice1.getDie()+dice2.getDie()-1); 
 					GUI.setCar(player2.getField(), player2.getName());
 					acc2.deposit(Integer.parseInt(fieldCost[player2.getField()-1]));
 					GUI.setBalance(player2.getName(), acc2.getBalance());
