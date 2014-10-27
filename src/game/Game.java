@@ -29,7 +29,7 @@ public class Game {
 		GUI.addPlayer(player2.getName(), acc2.getBalance(), Color.RED);
 		
 		while (true) {
-			if (GUI.getUserButtonPressed("", "Slå!")!="") {
+			if (GUI.getUserButtonPressed("Spiller "+turn+"'s tur.", "Slå!")!="") {
 				if (turn == player1.getId()) {
 					GUI.removeAllCars(player1.getName());
 					GUI.setDice(dice1.roll(), 0, 4, 3, dice2.roll(), 0, 5, 3);
