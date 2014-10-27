@@ -11,9 +11,8 @@ public class Dice {
 		return die;
 	}
 	
-	public int setDie(int a){
+	public void setDie(int a){
 		die = a;
-		return die;
 	}
 	
 	public int getDie() {
