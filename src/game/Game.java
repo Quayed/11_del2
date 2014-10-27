@@ -1,6 +1,8 @@
 package game;
 import java.awt.AWTException;
+import java.awt.Color;
 import java.awt.Robot;
+
 //hello
 import boundaryToMatador.GUI;
 
@@ -24,8 +26,8 @@ public class Game {
 		Player player2 = new Player("Jens", 2);
 		Account acc2 = new Account(1000, 1);
 		
-		GUI.addPlayer(player1.getName(), acc1.getBalance());
-		GUI.addPlayer(player2.getName(), acc2.getBalance());
+		GUI.addPlayer(player1.getName(), acc1.getBalance(), Color.BLUE);
+		GUI.addPlayer(player2.getName(), acc2.getBalance(), Color.RED);
 		while (true) {
 			if (GUI.getUserButtonPressed("", "Slå!")!="") {
 				if (turn == player1.getId()) {
