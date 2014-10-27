@@ -32,7 +32,8 @@ public class Game {
 			if (GUI.getUserButtonPressed("", "Slå!")!="") {
 				if (turn == player1.getId()) {
 					GUI.removeAllCars(player1.getName());
-					player1.setField(dice1.roll()+dice2.roll()-1);
+					GUI.setDice(dice1.roll(), 0, 4, 3, dice2.roll(), 0, 5, 3);
+					player1.setField(dice1.getDie()+dice2.getDie()-1); 
 					GUI.setCar(player1.getField(), player1.getName());
 					acc1.deposit(Integer.parseInt(fieldCost[player1.getField()-1]));
 					GUI.setBalance(player1.getName(), acc1.getBalance());
@@ -45,7 +46,8 @@ public class Game {
 				}
 				else if (turn == player2.getId()) {
 					GUI.removeAllCars(player2.getName());
-					player2.setField(dice1.roll()+dice2.roll()-1);
+					GUI.setDice(dice1.roll(), 0, 4, 3, dice2.roll(), 0, 5, 3);
+					player2.setField(dice1.getDie()+dice2.getDie()-1); 
 					GUI.setCar(player2.getField(), player2.getName());
 					acc2.deposit(Integer.parseInt(fieldCost[player2.getField()-1]));
 					GUI.setBalance(player2.getName(), acc2.getBalance());
