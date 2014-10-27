@@ -20,14 +20,14 @@ public class Game {
 		}
 		GUI.showMessage("Game has begun");
 		
-		Player player1 = new Player("Mogens", 1);
+		Player player1 = new Player(GUI.getUserString("Indtast spiller 1's navn:"), 1);
 		Account acc1 = new Account(1000, 1);
-		
-		Player player2 = new Player("Jens", 2);
-		Account acc2 = new Account(1000, 1);
-		
 		GUI.addPlayer(player1.getName(), acc1.getBalance(), Color.BLUE);
+		
+		Player player2 = new Player(GUI.getUserString("Indtast spiller 2's navn:"), 2);
+		Account acc2 = new Account(1000, 1);
 		GUI.addPlayer(player2.getName(), acc2.getBalance(), Color.RED);
+		
 		while (true) {
 			if (GUI.getUserButtonPressed("", "Slå!")!="") {
 				if (turn == player1.getId()) {
