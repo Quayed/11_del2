@@ -3,12 +3,54 @@ import java.awt.AWTException;
 import java.awt.Color;
 import java.awt.Robot;
 
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 //hello
 import boundaryToMatador.GUI;
 
 public class Game {
 
 	public static void main(String[] args) {
+		
+		// Language Section
+		File file = new File("test.txt");
+		FileInputStream fis = null;
+		BufferedInputStream bis = null;
+		DataInputStream dis = null;
+		
+		try {
+			fis = new FileInputStream(file);
+			bis = new BufferedInputStream(fis);
+			dis = new DataInputStream(bis);
+			
+			String[] linjer = new String[3];
+			
+			int c = 0;
+			while (dis.available() != 0) {
+				linjer[c] = dis.readLine();
+				c++;
+			}
+			//Display af loadede sætninger
+			for(int i = 0; i <= linjer.length-1; i++) {
+				System.out.println(linjer[i]);
+			}
+			
+			fis.close();
+			bis.close();
+			dis.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		// Language Section End
+		
 		GUI.create("fields.txt");
 		int turn = 1;
 		Dice dice1 = new Dice();
