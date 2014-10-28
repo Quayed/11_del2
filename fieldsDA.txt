@@ -1,7 +1,7 @@
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Tower;; 
+	title::Tårn;; 
 	subText:: ;; 
 	description::Du plyndre det nærliggende tårn og finder 250 guld!;;
 	leje:: ;;
@@ -9,7 +9,7 @@
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Crater;; 
+	title::Krater;; 
 	subText:: ;; 
 	description::Du falder i et krater og taber 200 guld!;;
 	leje:: ;;
@@ -17,31 +17,31 @@
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Palace Gates;; 
+	title::Paladsets Indgang;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::Du betaler 100 guld for at passere igennem Paladsets Indgang;;
 	leje:: ;;
 ||
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Cold Desert;; 
+	title::Den Kolde Ørken;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::Du betaler en fe 20 guld for at holde varmen i den kolde ørken;;
 	leje:: ;;
 ||
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Walled City;; 
+	title::Indemurede By;; 
 	subText:: ;; 
-	description::DESCRIPTION HERE;;
+	description::Du dræber en drage og den indemurede by betaler dig 180 guld!;;
 	leje:: ;;
 ||
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Monastery;; 
+	title::Klosteret;; 
 	subText:: ;; 
 	description:: Du træder ind i klosteret og vælger at konvertere til munk!!;;
 	leje:: ;;
@@ -49,15 +49,15 @@
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Black Cave;; 
+	title::Mørk grotte;; 
 	subText:: ;; 
-	description::Du træder ind i en mørk hule, men bliver rædselslagen af flagermusene. I din panik mister du 70 guld!;;
+	description::Du træder ind i en mørk grotte, men bliver rædselslagen af flagermusene. I din panik mister du 70 guld!;;
 	leje:: ;;
 ||
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Huts in the Mountains;; 
+	title::Hytter i bjergene;; 
 	subText:: ;; 
 	description:: Du finder nogle hytter i bjergene hvor du overnatter. Imens du sover mister du 60 guld!;;
 	leje:: ;;
@@ -65,7 +65,7 @@
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::The Werewall;; 
+	title::Varmuren;; 
 	subText:: ;; 
 	description:: Muren er bevogtet af varulve. Du falder ned fra toppen og mister 80 guld!;;
 	leje:: ;;
@@ -73,7 +73,7 @@
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::The Pit;; 
+	title::Farlig Grav;; 
 	subText:: ;; 
 	description:: Du falder i en farlig grav og mister 90 guld;;
 	leje:: ;;
@@ -81,7 +81,7 @@
 	type::Street;;
 	backgroundColor::75,,155,,225;;
 	foregroundColor::0,,0,,0;;
-	title::Goldmine;; 
+	title::Guldmine;; 
 	subText:: ;; 
-	description::You have found some gold in the mountains that you sell for 650, you are rich!;;
+	description::Du har fundet guld i bjergene du sælger for 650 guld, du er rig!!;;
 	leje:: ;;

@@ -85,3 +85,4 @@
 	subText:: ;; 
 	description::You have found some gold in the mountains that you sell for 650, you are rich!;;
 	leje:: ;;
+	
