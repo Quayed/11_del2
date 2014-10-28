@@ -1,7 +1,7 @@
 package test;
 
 import static org.junit.Assert.*;
-import game.Dice;
+import game.*;
 
 import org.junit.Test;
 
@@ -35,7 +35,26 @@ public class TestGame {
 		if(d > 18.31){
 			fail("chi testen at vores test ikke er gyldig for et 5% siginifikansniveau");
 		}
-		
 	}
-
+	
+	@Test
+	public void pointtest() {
+		int[] fieldCost = {250,-200,-100,-20,180,0,-70,-60,-80,-90,650};
+		Dice Pointdieone = new Dice();
+		Dice Pointdietwo = new Dice();
+		Account Player = new Account(0,1);
+		
+		for(int i = 1; i <= 6; i++) {
+			for(int j = 1; j <= 6; j++) {
+				Player.setBalance(1000);
+				Pointdieone.setDie(i);
+				Pointdietwo.setDie(j);
+				Player.deposit(fieldCost[Pointdieone.getDie() + Pointdietwo.getDie() - 2]);
+				
+				if(Player.getBalance() != fieldCost[Pointdieone.getDie() + Pointdietwo.getDie() - 2] + 1000 ) {
+					fail("balance virker ikke korrekt");
+				}
+			}
+		}
+	}
 }
