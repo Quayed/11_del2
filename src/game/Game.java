@@ -23,6 +23,7 @@ public class Game {
 		BufferedInputStream bis = null;
 		DataInputStream dis = null;
 		
+		
 		try {
 			File file;
 			GUI.create("fieldsDA.txt");
