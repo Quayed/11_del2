@@ -10,6 +10,10 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 //hello
 import boundaryToMatador.GUI;
 
@@ -26,14 +30,25 @@ public class Game {
 		
 		try {
 			File file;
-			GUI.create("fieldsDA.txt");
-			String language = GUI.getUserButtonPressed("Vælg hvilket sprog du gerne vil have spillet på:", "Dansk", "Engelsk");
-			if(language.equals("Engelsk")){
-				GUI.close();
+			JFrame frame = new JFrame();
+			Object[] languageOptions = {"Dansk", "Engelsk"};
+			
+			int chosenLanguage = JOptionPane.showOptionDialog(frame,
+				    "Skal spillet startes på dansk eller engelsk??",
+				    "Sprog indstillinger",
+				    JOptionPane.YES_NO_CANCEL_OPTION,
+				    JOptionPane.QUESTION_MESSAGE,
+				    null,
+				    languageOptions,
+				    languageOptions[1]);
+			
+			
+			if(chosenLanguage == 0){
+				GUI.create("fieldsDA.txt");
+				file = new File("DA.txt");
+			} else{
 				GUI.create("fields.txt");
 				file = new File("EN.txt");
-			} else{
-				file = new File("DA.txt");
 			}
 			
 			fis = new FileInputStream(file);
