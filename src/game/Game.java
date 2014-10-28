@@ -30,18 +30,6 @@ public class Game {
 		
 		try {
 			File file;
-			JFrame frame = new JFrame();
-			Object[] languageOptions = {"Dansk", "Engelsk"};
-			
-			int chosenLanguage = JOptionPane.showOptionDialog(frame,
-				    "Skal spillet startes på dansk eller engelsk??",
-				    "Sprog indstillinger",
-				    JOptionPane.YES_NO_CANCEL_OPTION,
-				    JOptionPane.QUESTION_MESSAGE,
-				    null,
-				    languageOptions,
-				    languageOptions[1]);
-			
 			
 			if(chosenLanguage == 0){
 				GUI.create("fieldsDA.txt");
