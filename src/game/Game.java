@@ -18,7 +18,7 @@ public class Game {
 	public static void main(String[] args) {
 		
 		//Lav betingelse på sprog-indstilling
-		File file = new File("DA.txt");
+		File file = new File("EN.txt");
 		FileInputStream fis = null;
 		BufferedInputStream bis = null;
 		DataInputStream dis = null;
@@ -41,7 +41,7 @@ public class Game {
 			
 			//Lav betingelse på sprog-indstilling
 			if(true) {
-				GUI.create("fieldsDA.txt");
+				GUI.create("fields.txt");
 			} else {
 				GUI.create("fields.txt");
 			}
