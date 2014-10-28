@@ -18,7 +18,7 @@ public class Game {
 	public static void main(String[] args) {
 		
 		// Language Section
-		File file = new File("test.txt");
+		File file = new File("DA.txt");
 		FileInputStream fis = null;
 		BufferedInputStream bis = null;
 		DataInputStream dis = null;
@@ -35,7 +35,7 @@ public class Game {
 				linjer[c] = dis.readLine();
 				c++;
 			}
-			//Display af loadede sætninger
+			//
 			for(int i = 0; i <= linjer.length-1; i++) {
 				System.out.println(linjer[i]);
 			}
