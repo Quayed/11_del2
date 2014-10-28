@@ -1,18 +1,5 @@
 package game;
-import java.awt.AWTException;
 import java.awt.Color;
-import java.awt.Robot;
-import java.io.BufferedInputStream;
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
-
-
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
 
 //hello
 import boundaryToMatador.GUI;
@@ -21,41 +8,18 @@ public class Game {
 
 	public static void main(String[] args) {
 		
-		//Lav betingelse p� sprog-indstilling
-		
-		FileInputStream fis = null;
-		BufferedInputStream bis = null;
-		DataInputStream dis = null;
 		
 		
-		try {
-			File file;
+		
+			Language language = new Language();
+			String chosenLanguage = language.chooseLanguage();
+			String [] line = language.loadLanguageFile();
 			
-			if(chosenLanguage == 0){
+			if(chosenLanguage.equals("Dansk")){
 				GUI.create("fieldsDA.txt");
-				file = new File("DA.txt");
-			} else{
+			} else if(chosenLanguage.equals("Engelsk")){
 				GUI.create("fields.txt");
-				file = new File("EN.txt");
 			}
-			
-			fis = new FileInputStream(file);
-			bis = new BufferedInputStream(fis);
-			dis = new DataInputStream(bis);
-			
-			String lines;
-			
-			int c = 0;
-			lines = dis.readLine();
-			
-			String[] line =  lines.split(":");
-			
-			fis.close();
-			bis.close();
-			dis.close();
-			
-			//Lav betingelse p� sprog-indstilling
-			
 			
 			int turn = 1;
 			Dice dice1 = new Dice();
@@ -109,11 +73,7 @@ public class Game {
 			}
 			GUI.showMessage(line[4] + turn + line[5]);
 
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		
 		
 	}
 

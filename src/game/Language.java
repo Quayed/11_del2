@@ -1,7 +1,16 @@
 package game;
 
+import java.io.BufferedInputStream;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
+import boundaryToMatador.GUI;
 
 public class Language {
 	private String chosenLanguage;
@@ -31,6 +40,41 @@ public class Language {
 		}
 		
 		return(chosenLanguage);
+	}
+	
+	public String[] loadLanguageFile(){
+		String[] line = null;
+		try{
+			File file = null;
+			FileInputStream fis = null;
+			BufferedInputStream bis = null;
+			DataInputStream dis = null;
+			
+			if(chosenLanguage.equals("Dansk")){
+				file = new File("DA.txt");
+			} else if(chosenLanguage.equals("Engelsk")){
+				file = new File("EN.txt");
+			}
+			
+			fis = new FileInputStream(file);
+			bis = new BufferedInputStream(fis);
+			dis = new DataInputStream(bis);
+			
+			String lines;
+			
+			lines = dis.readLine();
+			
+			line =  lines.split(":");
+			
+			fis.close();
+			bis.close();
+			dis.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return line;
 	}
 }
 
