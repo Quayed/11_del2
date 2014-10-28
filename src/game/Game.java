@@ -28,15 +28,12 @@ public class Game {
 			bis = new BufferedInputStream(fis);
 			dis = new DataInputStream(bis);
 			
-			String[] lines = new String[1];
+			String lines;
 			
 			int c = 0;
-			while (dis.available() != 0) {
-				lines[c] = dis.readLine();
-				c++;
-			}
-			String[] line =  lines[0].split(":");
-			System.out.print(line[0]);
+			lines = dis.readLine();
+			
+			String[] line =  lines.split(":");
 			
 			fis.close();
 			bis.close();
@@ -48,7 +45,6 @@ public class Game {
 			} else {
 				GUI.create("fields.txt");
 			}
-			
 
 			int turn = 1;
 			Dice dice1 = new Dice();
@@ -100,7 +96,8 @@ public class Game {
 					}
 				}
 			}
-			GUI.showMessage(line[4]+turn+line[5]);
+			GUI.showMessage(line[4] + turn + line[5]);
+
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

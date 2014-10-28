@@ -32,7 +32,7 @@ public class TestDice {
 			d = d + listOfActualPropability[i];
 		}
 		
-		if(d<18.31){
+		if(d > 18.31){
 			fail("chi testen at vores test ikke er gyldig for et 5% siginifikansniveau");
 		}
 		
