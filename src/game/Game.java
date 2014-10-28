@@ -17,13 +17,24 @@ public class Game {
 
 	public static void main(String[] args) {
 		
-		//Lav betingelse på sprog-indstilling
-		File file = new File("EN.txt");
+		//Lav betingelse pï¿½ sprog-indstilling
+		
 		FileInputStream fis = null;
 		BufferedInputStream bis = null;
 		DataInputStream dis = null;
 		
 		try {
+			File file;
+			GUI.create("fieldsDA.txt");
+			String language = GUI.getUserButtonPressed("VÃ¦lg hvilket sprog du gerne vil have spillet pÃ¥:", "Dansk", "Engelsk");
+			if(language.equals("Engelsk")){
+				GUI.close();
+				GUI.create("fields.txt");
+				file = new File("EN.txt");
+			} else{
+				file = new File("DA.txt");
+			}
+			
 			fis = new FileInputStream(file);
 			bis = new BufferedInputStream(fis);
 			dis = new DataInputStream(bis);
@@ -39,13 +50,9 @@ public class Game {
 			bis.close();
 			dis.close();
 			
-			//Lav betingelse på sprog-indstilling
-			if(true) {
-				GUI.create("fields.txt");
-			} else {
-				GUI.create("fields.txt");
-			}
-
+			//Lav betingelse pï¿½ sprog-indstilling
+			
+			
 			int turn = 1;
 			Dice dice1 = new Dice();
 			Dice dice2 = new Dice();
