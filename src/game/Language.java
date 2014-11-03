@@ -76,6 +76,13 @@ public class Language {
 		}
 		return line;
 	}
+	
+	public void setLanguage(String a) {
+		chosenLanguage = a;
+	}
+	public String getLanguage() {
+		return chosenLanguage;
+	}
 }
 
 
