@@ -20,12 +20,12 @@ public class BigTest {
 		int b = 0;
 		int n = 0;
 		int c = 0;
-		int m = 1000;
+		int numberOfIterations = 1000;
 		int t = 0;
 		int u = 100;
 		int s = 0;
-		String[] run = new String[m+1];
-		for(int j = 0; j <= m; j++) {
+		String[] run = new String[numberOfIterations+1];
+		for(int j = 0; j <= numberOfIterations; j++) {
 			
 			c = 0;
 			Language language = new Language();
@@ -113,7 +113,7 @@ public class BigTest {
 			System.out.println(j + ", " + c);
 			
 		}
-		n = n/m;
+		n = n/numberOfIterations;
 		System.out.println("Spiller 1 vandt " + a + " gange");
 		System.out.println("Spiller 2 vandt " + b + " gange");
 		System.out.println("Gennemsnitslig antal kast per spil: " + n);
