@@ -69,12 +69,13 @@ public class TestGame {
 		int b = 0;
 		int n = 0;
 		int c = 0;
-		int m = 10;
+		int m = 1000;
 		int t = 0;
 		int u = 100;
 		int s = 0;
-		String[] run = new String[500];
+		String[] run = new String[m+1];
 		for(int j = 0; j <= m; j++) {
+			
 			c = 0;
 			Language language = new Language();
 			language.setLanguage("Dansk");
@@ -138,14 +139,14 @@ public class TestGame {
 				fail("Spillet sluttede men hverken spiller 1 eller spiller 2 har vundet");
 			}
 			if(turn == 1 && !(acc1.getBalance() >= 3000)) {
-				fail("Spiller 1 vandt men balancen var ikke på 3000 eller over");
+				fail("Spiller 1 vandt men balancen var ikke pï¿½ 3000 eller over");
 			}
 			if(turn == 2 && !(acc2.getBalance() >= 3000)) {
 				System.out.println("Spiller " + turn + " vandt");
 				System.out.println(acc2.getBalance());
-				System.out.print("Antal gennemløb " + c);
+				System.out.print("Antal gennemlï¿½b " + c);
 				
-				fail("Spiller 2 vandt men balancen var ikke på 3000 eller over");
+				fail("Spiller 2 vandt men balancen var ikke pï¿½ 3000 eller over");
 			}
 			n += c;
 			if(turn == 1)
@@ -154,8 +155,8 @@ public class TestGame {
 				b++;
 			if(c < u)
 				u = c;
+				s = c;
 			if(c > t) {
-				s = j;
 				t = c;
 			}
 			
@@ -167,7 +168,7 @@ public class TestGame {
 		System.out.println("Spiller 2 vandt " + b + " gange");
 		System.out.println("Gennemsnitslig antal kast per spil: " + n);
 		System.out.println("Laveste antal kast: " + u);
-		System.out.println("Forløb for korteste spil " + run[s]);
-		System.out.println("Højeste antal kast: " + t);
+		System.out.println("Forlï¿½b for korteste spil " + run[s]);
+		System.out.println("Hï¿½jeste antal kast: " + t);
 	}
 }
