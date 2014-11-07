@@ -64,6 +64,13 @@ public class TestGame {
 	}
 	
 	@Test
+	public void depositNegative(){
+		Account acc = new Account(100,0);
+		acc.deposit(-1000);
+		assertEquals(0, acc.getBalance());
+	}
+	
+	@Test
 	public void runtest() {
 		int a = 0;
 		int b = 0;
