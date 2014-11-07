@@ -36,7 +36,6 @@ public class TestGame {
 		for(int i = 0; i < 11; i++){
 			d = d + listOfActualPropability[i];
 		}
-		
 		if(d > 18.31){
 			fail("chi testen at vores test ikke er gyldig for et 5% siginifikansniveau");
 		}
